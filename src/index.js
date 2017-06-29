@@ -4,7 +4,6 @@ getUsers().then(result => {
   let usersBody = '';
 
   result.forEach(user => {
-    console.log(user); //eslint-disable-line no-console
     usersBody+= `<tr>
     <td><a href='#' data-id="${user.id}" class="deleteUser">Delete</a></td>
     <td>${user.id}</td>
